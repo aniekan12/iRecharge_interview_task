@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:irecharge_interview_task/bLoC/models/entries.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class DetailsWidget extends StatelessWidget {
   const DetailsWidget({
@@ -91,11 +92,19 @@ class DetailsWidget extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.only(left: 17.0),
-              child: ListTile(title: Text(entries!.link!)),
+              child: ListTile(
+                  title: InkWell(
+                      onTap: () => _launchUrl(entries!.link!),
+                      child: Text(entries!.link!))),
             ),
           ],
         ),
       ],
     );
+  }
+
+  void _launchUrl(String? url) async {
+    if (!await launchUrl(Uri.parse(url!)))
+      throw 'Could not launch ${entries!.link!}';
   }
 }
