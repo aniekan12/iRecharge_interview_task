@@ -16,9 +16,9 @@ class EntriesCard extends StatelessWidget {
     return InkWell(
       onTap: () => Get.to(() => EntriesDetails(entries: entries)),
       child: Container(
-          padding: EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(8.0),
           width: SizeConfig.screenWidth,
-          height: SizeConfig.screenHeight! / 5,
+          height: SizeConfig.screenHeight! / 4,
           child: Card(
             elevation: 4,
             child: ListTile(

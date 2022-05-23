@@ -4,6 +4,7 @@ import 'package:irecharge_interview_task/bLoC/view_models/entries_view_model.dar
 import 'package:irecharge_interview_task/pages/shared/app_future_builder.dart';
 import 'package:irecharge_interview_task/pages/shared/components.dart';
 import 'package:irecharge_interview_task/pages/shared/entries_card.dart';
+import 'package:irecharge_interview_task/utilities/constants/colors.dart';
 import 'package:provider/provider.dart';
 
 class EntriesHome extends StatefulWidget {
@@ -38,6 +39,9 @@ class _EntriesHomeState extends State<EntriesHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: AppColors.darkGreen,
+      ),
       body: AppFutureBuilder(
         future: entries,
         returnOnData: true,
