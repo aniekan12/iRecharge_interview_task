@@ -1,16 +1,24 @@
 # irecharge_interview_task
 
-A new Flutter project.
+an app that displays entries from https://api.publicapis.org/entries.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+ ### Cloning the Repo
+  * Click on the "Code" button on the Repo page.
+  * Copy the URL for the Repo "https://github.com/aniekan12/irecharge_interview_task"
+  * Open your code editor and run `git clone` "https://github.com/aniekan12/irecharge_interview_task.git"  
+ 
 
-A few resources to get you started if this is your first Flutter project:
+Download dependencies with:
+```
+flutter pub get
+```
+And build the app with:
+```
+flutter run
+```
+ 
+ ## Screenshots from the app
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ 
