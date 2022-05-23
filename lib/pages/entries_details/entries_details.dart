@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:irecharge_interview_task/bLoC/models/entries.dart';
 
-class EntriesDetails extends StatefulWidget {
-  const EntriesDetails({Key? key}) : super(key: key);
+class EntriesDetails extends StatelessWidget {
+  final Entries? entries;
+  const EntriesDetails({Key? key, this.entries}) : super(key: key);
 
-  @override
-  State<EntriesDetails> createState() => _EntriesDetailsState();
-}
-
-class _EntriesDetailsState extends State<EntriesDetails> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(entries!.aPI!),
+      ),
+    );
   }
 }
